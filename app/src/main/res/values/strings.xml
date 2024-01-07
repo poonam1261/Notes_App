@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Notes APP</string>
+
+    <string name="hey_there_">Hey there</string>
+
+    <string name="create_an_a">
+Create an Account
+</string>
+</resources>

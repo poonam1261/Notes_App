@@ -1,0 +1,60 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="16dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="7dp"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="#A4CBFA"
+
+        >
+
+        <TextView
+            android:id="@+id/note_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/note_content_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the note content..."
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/note_timestamp_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jan 01, 2023"
+            android:textSize="15sp"
+            android:textColor="@color/cardview_dark_background"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:paddingBottom="8dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

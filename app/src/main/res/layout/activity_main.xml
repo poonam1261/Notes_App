@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar_layout"
+        android:background="@drawable/rounded_corner2"
+        android:padding="10dp"
+        android:backgroundTint="@color/my_fav">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_title"
+            android:text="Notes"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_btn"
+            android:src="@drawable/baseline_search_24"
+            android:layout_toLeftOf="@id/menu_btn"
+            android:layout_centerVertical="true"
+            app:tint="@color/my_primary"
+            android:backgroundTint="@color/white"
+            android:contentDescription="Search"
+            android:layout_marginRight="8dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_btn"
+            android:src="@drawable/baseline_menu_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:tint="@color/my_primary"
+            android:backgroundTint="@color/white"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/color2"
+        android:layout_below="@id/title_bar_layout"
+        android:layout_marginTop="10dp"
+        android:id="@+id/stroke"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stroke"
+
+        android:layout_marginTop="9dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_note_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/my_primary"
+        android:contentDescription="Add Note"
+        android:src="@drawable/baseline_add_24"
+        app:tint="@color/white" />
+
+
+
+
+</RelativeLayout>
